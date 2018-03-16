@@ -403,7 +403,7 @@ void MDLImporter::InternReadFile_Quake1() {
 
     // now get a pointer to the first frame in the file
     BE_NCONST MDL::Frame* pcFrames = (BE_NCONST MDL::Frame*)szCurrent;
-    BE_NCONST MDL::SimpleFrame* pcFirstFrame;
+    BE_NCONST MDL::SimpleFrame* pcFirstFrame = NULL;
 
     if (0 == pcFrames->type) {
         // get address of single frame
